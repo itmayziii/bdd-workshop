@@ -37,12 +37,16 @@ const config = {
       '/bdd',
       '/user-stories',
       '/acceptance-criteria',
+      '/cucumber',
+      '/exercise',
     ],
     collapsedNav: [
     ],
     links: [
       { text: 'BDD Overview', link: 'https://cucumber.io/docs/bdd/' },
-      { text: 'Cucumber Overview', link: 'https://cucumber.io/docs/guides/overview/' }
+      { text: 'Cucumber Overview', link: 'https://cucumber.io/docs/guides/overview/' },
+      { text: 'Writing Better Gherkin', link: 'https://cucumber.io/docs/bdd/better-gherkin/' },
+      { text: 'Cucumber Reference', link: 'https://cucumber.io/docs/cucumber/' }
     ],
     frontline: false,
     ignoreIndex: true,

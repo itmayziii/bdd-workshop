@@ -50,7 +50,7 @@ BDD's goal is to establish a shared understanding of the problems and solutions 
   \- Liz Keogh
 
 
-### How Complex is Software?
+### Software is Complex
 Let us take a look at a very simple example of how complex developing software can be.
 
 Let's say we get a requirement to "Create a contact us form on the companies' website". This requirement seems fairly
@@ -58,7 +58,7 @@ simple right? I would bet you that if you handed this to 100 different developer
 and I don't just mean how the form is styled.
 
 It would not be outlandish to say:
-* Some developers would include 1 "Name" field instead two "First Name" and "Last Name" fields. This may be important for
+* Some developers would include one "Name" field instead two "First Name" and "Last Name" fields. This may be important for
 data integrity reasons, it's not always easy to parse a single "Name" field in the future with names like "Mary Ann Lou"
 where "Mary Ann" is the first name.
 * Some developers would disable the form's submit button until the form is entered correctly so that fewer people try to

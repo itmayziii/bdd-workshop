@@ -4,78 +4,48 @@ metaTitle: "Acceptance Criteria"
 metaDescription: "Overview of what acceptance criteria is and why it is useful for establishing common understanding between people"
 ---
 
-# What is a User Story
-User stories are a method of capturing a feature in a simple description from the perspective of the person that needs
-the new feature.
+# What is Acceptance Criteria
+Acceptance criteria is the requirements that must be satisfied in order to mark a [user story](user-stories.md) complete.
 
-User stories usually come in the format:
+Acceptance criteria usually comes in the format of:
 ```gherkin
-As a _TYPE_OF_USER_
-I want _SOMETHING_
-So that _RESULT OF SOMETHING_
+Given SOME PRECONDITION
+When SOMETHING HAPPENS
+Then RESULTS HAPPEN
 ```
 
-i.e.
+There may be multiple acceptance criteria written for any given user story.
+
+# Acceptance Criteria and BDD
+BDD would define acceptance criteria with a few traits:
+
+* **It should be testable** - Engineers write tests to make sure these acceptance criteria pass and show the results of
+the tests to the product owners to help establish trust between the software written and the business requirements.
+* **Only specific enough to describe behaviour without details** - i.e. it is often clear enough to say:
 ```gherkin
-As a landlord
-I want a list of tenants that have not paid rent
-So that I can follow up with those tenants
+Given a landlord is logged in
+When they look at the list of tenants who have not paid rent
+Then they should see the first and last name of everyone one the list
 ```
 
-You can see above we didn't describe any specific instructions of how this should be implemented in the software. This is
-intentional as these stories are meant to stay focused on the outcome not the implementation. We will talk about how we
-describe implementation in the [acceptance criteria](./acceptance-criteria) section.
-
-# Who Writes User Stories
-Anyone can write a user story. It is up to the product owner to prioritize the user stories according to business needs.
-A developer may write a user story to improve the experience of a checkout process but that doesn't mean it will be prioritized
-by the product owner. Sometimes features work "well enough" for the business to have value and improving something would not
-provide enough value for it to be worth the business's time.
-
-# How Big Should Users Stories Be
-It can be tempting to have a user story such as:
-
+The above _correct_ acceptance criteria is correct in contrast to criteria that describes too much detail such as:
 ```gherkin
-As a landlord
-I want to manage my tenants who have not paid rent
-So that I can make more money
+Given A landlord go to the login page
+And the username "david123" is entered
+And the password "Password" is entered
+When I navigate to the tenants page
+And I click the tab "delinquent tenants"
+Then I should see the first and last name of everyone on the list
 ```
 
-The problem with the above user story is that there is no direct feature that can be gathered from it. In fact the "managing of
-tenants who have not paid rent" is likely to include several different features such as:
+The former acceptance criteria is better than the latter acceptance criteria because if the implementation changes
+then the wording of the test does not need to change, and you still do not sacrifice any understanding of what is happening
+in the system.
 
-```gherkin
-As a landlord
-I want to have emails go out to tenants who have not paid rent
-So that they will be reminded
-And so that I will not have to remind them myself
-```
-
-```gherkin
-As a landlord
-I want a list of tenants that have not paid rent
-So that I can follow up with those tenants
-```
-
-```gherkin
-As a landlord
-I want to see the balance unpaid by tenants
-So that I have an idea of how behind a tenant is
-```
-
-```gherkin
-As a tenant
-I want to receive reminders leading up to my due date
-So that I am not late on payments
-```
-
-The user stories we just wrote are much more actionable thant simply "managing tenants who have not paid rent". We call
-the big user stories like "managing tenants who have not paid rent" epics. Epics are user stories that are too big to deliver
-in small increments. We want to break down these Epics into smaller stories to deliver value continuously. We should be able
-to go live with the list of tenants who have not paid rent without having to deliver the other stories as well. This is
-because each story **provides value** to somebody in our system, and by delivering that value we can get feedback which is
-often the most important thing we can have.
-
-> No business plan survives first contact with a customer
-
-  \- Steve Blank
+# When to Write Acceptance Criteria
+Acceptance criteria should be written as close to development as possible, which usually means before a scrum style sprint
+starts. The delay in writing acceptance criteria until development is about to start is intentional. Writing acceptance
+criteria can be a very time-consuming thing to do, so you want to make sure your only spending that time when your guaranteed to
+be doing that work. If you were to write acceptance criteria for every user story that comes your way, it would be likely
+a lot of those user stories never even went to production because business priorities changed. Keeping the acceptance
+criteria close to development also keeps the work fresh in everyone's mind.
