@@ -3,7 +3,8 @@
 <url> <loc>https://bdd-workshop.com/acceptance-criteria</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bdd-workshop.com/bdd</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bdd-workshop.com/cucumber</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://bdd-workshop.com/introduction</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bdd-workshop.com/exercise</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bdd-workshop.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bdd-workshop.com/introduction</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bdd-workshop.com/user-stories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
