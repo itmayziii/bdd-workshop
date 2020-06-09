@@ -32,6 +32,11 @@ Feature: Late Payment Tenant List
     Then the list should be alphabetized by last
 ```
 
+These grammar rules of Gherkin should be written in a way that anybody can read them. It should not matter if you are a product
+owner, developer, or QA engineer, the above language should make sense to you. These human readable specifications are
+taken by the developers and tests are written to make sure the software matches the specification. The underlying tests
+written are called "step definitions", please see below.
+
 ## Step Definitions
 Step definitions take the Gherkin specifications and connect them to the actual programming code.
 
@@ -47,3 +52,9 @@ Given('a landlord is logged in', () => {
    .env()
 })
 ```
+
+## Conclusion
+Knowing the above we can conclude that Cucumber is a tool to help us practice BDD by giving us a framework to take our
+software specifications and turn them into tests. These tests should help give our team confidence that the software is
+doing what we are asking of it. If we see passing tests we have a large degree of confidence that our specification is
+working as intended.
