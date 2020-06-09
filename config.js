@@ -1,32 +1,27 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://bdd-workshop.com',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
+    logo: 'https://static1.smartbear.co/cucumber/media/images/logos/icons/cucumber-open-icon.svg',
+    logoLink: 'https://bdd-workshop.com',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+      "BDD Workshop",
+    githubUrl: 'https://github.com/itmayziii/bdd-workshop/tree/gh-pages',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
+    social: `
+      <li>
+		    <a href="https://twitter.com/iTMayzIII" target="_blank" rel="noopener">
 		      <div class="twitterBtn">
 		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Discord'}/>
 		      </div>
 		    </a>
 		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+		`,
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
@@ -38,24 +33,28 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/introduction', // add trailing slash if enabled above,
+      '/bdd',
+      '/user-stories',
+      '/acceptance-criteria',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [
+      { text: 'BDD Overview', link: 'https://cucumber.io/docs/bdd/' },
+      { text: 'Cucumber Overview', link: 'https://cucumber.io/docs/guides/overview/' }
+    ],
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+      "<a href='https://bdd-workshop.com/'>BDD </a><div class='greenCircle'></div><a href='https://bdd-workshop.com/'>Workshop</a>",
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'BDD Workshop | Tommy May III',
+    description: 'BDD workshop focused around Cucumber',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    docsLocation: '',
+    favicon: 'https://cucumber.io/img/favicon.png',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.

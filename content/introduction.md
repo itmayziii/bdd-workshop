@@ -1,32 +1,30 @@
 ---
 title: "Introduction"
-metaTitle: "This is the title tag of this page"
-metaDescription: "This is the meta description"
+metaTitle: "Workshop goals"
+metaDescription: "Introduction to the workshop goals and instructor Tommy May III"
 ---
 
-Some introduction text. Lists out all the headings from h1 to h6. Easy to customise.
+# Prerequisites
+* Basic knowledge of the command line
+* Knowledge of programming will be helpful, examples will be given mostly in Javascript
 
-# Heading H1
-Heading 1 text
+# Goals
+The goal of this workshop is to teach you about behavior-driven development (BDD) and how to apply it to your own projects.
+There will be many examples for you to try for yourself with the belief that by trying something with your own hands you
+will maximize your learning.
 
-## Heading H2
-Heading 2 text
+## You Will Learn
+* What [BDD](https://cucumber.io/docs/bdd/) is
+* What user stories are and how to write them yourself
+* What [acceptance criteria](https://www.productplan.com/glossary/acceptance-criteria/) is and how it helps clarify user stories
+* What [Cucumber](https://cucumber.io/docs/guides/overview/) is and how it relates to BDD
+* How to write your very first set of BDD tests
 
-### Heading H3
-Heading 3 text
+# Instructor
+Tommy May III
 
-#### Heading H4
-Heading 4 text
+- [![linkedin logo](./images/linkedin-logo.svg)](https://www.linkedin.com/in/tommy-may-07223979/)
+- [![twitter logo](./images/twitter-logo.svg)](https://twitter.com/iTMayzIII)
+- <a href="https://dev.to/itmayziii"><img alt="dev.to logo" src="https://docs.dev.to/devblacksquarelogo.svg" width="40"/></a>
 
-##### Heading H5
-Heading 5 text
-
-###### Heading H6
-Heading 6 text
-
-## Lists
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+![Instructor - Tommy May III](./images/tommy-may.jpg)
